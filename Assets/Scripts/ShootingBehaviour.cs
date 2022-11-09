@@ -12,6 +12,15 @@ public class ShootingBehaviour : MonoBehaviour
 
     public float velocity = 14f;
 
+    public AudioClip shootingSFX;
+
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
@@ -34,6 +43,10 @@ public class ShootingBehaviour : MonoBehaviour
         myAnimator.SetTrigger("Shoot");
         myAnimatorPistola.SetTrigger("Shoot");
         GameObject nuevaBala = Instantiate(bala, puntoDisparo.transform.position, bala.transform.rotation) as GameObject;
+
+        _audioSource.clip = shootingSFX;
+        _audioSource.Play();
+
         nuevaBala.GetComponent<Rigidbody>().velocity = velocity * direccionDisparo;
         Destroy(nuevaBala, 3);
     }
