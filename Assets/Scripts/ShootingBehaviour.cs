@@ -32,7 +32,7 @@ public class ShootingBehaviour : MonoBehaviour
             direccionDisparo = Vector3.right;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.V))
         {
             Shoot();
         }

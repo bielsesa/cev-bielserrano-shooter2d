@@ -43,8 +43,8 @@ public class HealthSystem : MonoBehaviour
         {
             health = 0;
 
-            _audioSource.clip = fallSound;
-            _audioSource.Play(); // no llega a sonar porque no le da tiempo
+            //_audioSource.clip = fallSound;
+            //_audioSource.Play(); // no llega a sonar porque no le da tiempo
             
             CheckDeath();
         }

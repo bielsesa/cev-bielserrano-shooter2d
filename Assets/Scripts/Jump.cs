@@ -8,7 +8,6 @@ public class Jump : MonoBehaviour
     private Rigidbody _rigidbody;
     private bool _grounded; // false as default value
 
-
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();

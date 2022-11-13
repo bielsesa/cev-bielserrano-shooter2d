@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject BtnContinue;
+    public GameObject mainUI;
+    public GameObject controlsUI;
 
     private void Start()
     {
-        //BtnContinue.GetComponent<Button>().interactable = false;
+        controlsUI.SetActive(false);
     }
     public void StartNewGame()
     {
@@ -16,7 +16,13 @@ public class MainMenu : MonoBehaviour
     }
     public void ShowControls()
     {
-        // TODO
+        mainUI.SetActive(false);
+        controlsUI.SetActive(true);
+    }    
+    public void HideControls()
+    {
+        mainUI.SetActive(true);
+        controlsUI.SetActive(false);
     }
     public void ExitGame()
     {

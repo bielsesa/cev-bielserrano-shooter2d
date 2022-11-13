@@ -4,6 +4,7 @@ public class AudioHandler : MonoBehaviour
 {
     public AudioClip levelMusic;
     public AudioClip enemyDestroyAudio;
+    public AudioClip bounceAudio;
 
     private AudioSource _audioSource;
 
@@ -22,5 +23,10 @@ public class AudioHandler : MonoBehaviour
     public void PlayEnemyDeathSound()
     {
         _audioSource.PlayOneShot(enemyDestroyAudio, 1.2f);
+    }
+
+    public void PlayBounceSound()
+    {
+        _audioSource.PlayOneShot(bounceAudio, 1.2f);
     }
 }
