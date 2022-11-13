@@ -14,10 +14,13 @@ public class KeyBehaviour : MonoBehaviour
     private bool _hasKey;
     public List<GameObject> _keys;
 
+    private GameObject _levelManager;
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
         _keys = new List<GameObject>();
+        _levelManager = GameObject.FindGameObjectWithTag("LevelManager");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,7 +53,14 @@ public class KeyBehaviour : MonoBehaviour
                 _keys.Remove(key);
                 Destroy(key);
 
-                if (_keys.Count == 0) _hasKey = false;
+                // TODO:
+                // check if X key has been used, call LevelManager.LoadSceneWithDelay
+
+                if (_keys.Count == 0)
+                {
+                    _hasKey = false;
+                    if (_levelManager != null) _levelManager.GetComponent<LevelHandler>().LoadSceneWithDelay("Level2", 5f);
+                }
             }
         }
     }

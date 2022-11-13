@@ -11,6 +11,7 @@ TagManager:
   - FallLimit
   - AudioManager
   - Bouncer
+  - LevelManager
   layers:
   - Default
   - TransparentFX
