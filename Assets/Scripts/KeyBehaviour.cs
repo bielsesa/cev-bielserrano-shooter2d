@@ -4,22 +4,28 @@ using System.Linq;
 
 public class KeyBehaviour : MonoBehaviour
 {
+    [Header("Audios")]
     public AudioClip collectKeyAudio;
     public AudioClip openDoorAudio;
 
+    [Header("Level")]
+    public string levelToLoad;
+    public float levelLoadingDelay = 3f;
+
+    [Header("Keys")]
     public List<string> keyTypes;
+    public List<GameObject> keys;
 
     private AudioSource _audioSource;
 
     private bool _hasKey;
-    public List<GameObject> _keys;
 
     private GameObject _levelManager;
 
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        _keys = new List<GameObject>();
+        keys = new List<GameObject>();
         _levelManager = GameObject.FindGameObjectWithTag("LevelManager");
     }
 
@@ -29,12 +35,12 @@ public class KeyBehaviour : MonoBehaviour
         {
             other.transform.SetParent(transform);
             other.transform.position = transform.position - new Vector3(-0.6f, 0.06f, 0.6f);
-            if (_keys.Count == 0) _hasKey = true;
+            if (keys.Count == 0) _hasKey = true;
 
             _audioSource.clip = collectKeyAudio;
             _audioSource.Play();
 
-            _keys.Add(other.gameObject);
+            keys.Add(other.gameObject);
         }
 
         if (other.transform.tag == "Door" && _hasKey)
@@ -42,7 +48,7 @@ public class KeyBehaviour : MonoBehaviour
             string doorType = other.gameObject.name.Replace("Door", string.Empty);
             
             // search for the corresponding key for the door
-            GameObject key = _keys.FirstOrDefault(x => x.gameObject.name.StartsWith(doorType));
+            GameObject key = keys.FirstOrDefault(x => x.gameObject.name.StartsWith(doorType));
             if (key != null)
             {
                 _audioSource.clip = openDoorAudio;
@@ -50,16 +56,17 @@ public class KeyBehaviour : MonoBehaviour
 
                 Destroy(other.gameObject);
 
-                _keys.Remove(key);
+                keys.Remove(key);
                 Destroy(key);
 
-                // TODO:
-                // check if X key has been used, call LevelManager.LoadSceneWithDelay
-
-                if (_keys.Count == 0)
+                if (keys.Count == 0)
                 {
+                    Debug.Log($"Keys count to 0, level to load: {levelToLoad}");
+
                     _hasKey = false;
-                    if (_levelManager != null) _levelManager.GetComponent<LevelHandler>().LoadSceneWithDelay("Level2", 5f);
+                    
+                    // load next scene with a little bit of delay
+                    if (_levelManager != null) _levelManager.GetComponent<LevelHandler>().LoadSceneWithDelay(levelToLoad, levelLoadingDelay);
                 }
             }
         }

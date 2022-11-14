@@ -184,8 +184,8 @@ GameObject:
   - component: {fileID: 8825752148397272721}
   - component: {fileID: 8825752148397272722}
   - component: {fileID: 8825752148397272723}
-  - component: {fileID: 8825752148397272716}
   - component: {fileID: 8825752148397272717}
+  - component: {fileID: 8825752148397272716}
   - component: {fileID: 8825752148397272718}
   m_Layer: 0
   m_Name: Player
@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
+  myAnimator: {fileID: 8825752148397272716}
 --- !u!114 &8825752148397272722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,6 +356,22 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   damageAppliedSound: {fileID: 8300000, guid: af0c14db5aa57974bb610ac3ecd3796c, type: 3}
   fallSound: {fileID: 8300000, guid: 5fe2c4fb74ed6f7469fb58ad11ab4958, type: 3}
+--- !u!114 &8825752148397272717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8825752148397272730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a115f3be09f0bdf4da5cd76c3469358c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectKeyAudio: {fileID: 8300000, guid: 14ef9143fe1c06a4fae2a0ed1a66d40c, type: 3}
+  openDoorAudio: {fileID: 8300000, guid: f3f6ba6258fee064fb4976063d79a502, type: 3}
+  keyTypes: []
+  _keys: []
 --- !u!95 &8825752148397272716
 Animator:
   serializedVersion: 4
@@ -375,22 +392,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8825752148397272717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8825752148397272730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a115f3be09f0bdf4da5cd76c3469358c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectKeyAudio: {fileID: 8300000, guid: 14ef9143fe1c06a4fae2a0ed1a66d40c, type: 3}
-  openDoorAudio: {fileID: 8300000, guid: f3f6ba6258fee064fb4976063d79a502, type: 3}
-  keyTypes: []
-  _keys: []
 --- !u!82 &8825752148397272718
 AudioSource:
   m_ObjectHideFlags: 0
