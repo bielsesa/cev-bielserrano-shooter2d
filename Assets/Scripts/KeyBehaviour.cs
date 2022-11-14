@@ -11,6 +11,7 @@ public class KeyBehaviour : MonoBehaviour
     [Header("Level")]
     public string levelToLoad;
     public float levelLoadingDelay = 3f;
+    public string doorColorThatLoadsNextLevel;
 
     [Header("Keys")]
     public List<string> keyTypes;
@@ -61,10 +62,17 @@ public class KeyBehaviour : MonoBehaviour
 
                 if (keys.Count == 0)
                 {
-                    Debug.Log($"Keys count to 0, level to load: {levelToLoad}");
+                    _hasKey = false;                    
+                }
 
-                    _hasKey = false;
-                    
+                Debug.Log($"key starts with {key.gameObject.name.StartsWith(doorColorThatLoadsNextLevel)}");
+
+                if (key.gameObject.name.StartsWith(doorColorThatLoadsNextLevel))
+                {
+                    Debug.Log("load next level");
+
+                    Debug.Log($"is level manager null? {_levelManager == null}");
+
                     // load next scene with a little bit of delay
                     if (_levelManager != null) _levelManager.GetComponent<LevelHandler>().LoadSceneWithDelay(levelToLoad, levelLoadingDelay);
                 }

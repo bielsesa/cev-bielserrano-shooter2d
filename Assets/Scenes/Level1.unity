@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f01926f669d427b42b44ef4de754b4a6, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn2
       objectReference: {fileID: 0}
+    - target: {fileID: 5057719397668613923, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
 --- !u!4 &534723533 stripped
@@ -528,7 +532,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &574112641
 BoxCollider:
@@ -719,7 +723,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &756393961
 BoxCollider:
@@ -816,7 +820,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1076039755
 BoxCollider:
@@ -913,7 +917,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1150780495
 BoxCollider:
@@ -1007,7 +1011,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1320976376
 Transform:
@@ -1043,7 +1047,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1364996432
 Transform:
@@ -1181,7 +1185,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1689486501
 BoxCollider:
@@ -1324,7 +1328,7 @@ GameObject:
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!136 &1803354418
 CapsuleCollider:
@@ -1534,6 +1538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn1
       objectReference: {fileID: 0}
+    - target: {fileID: 5057719397668613923, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
 --- !u!1001 &6402143296454879749
@@ -1617,11 +1625,19 @@ PrefabInstance:
       value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
+      propertyPath: levelLoadingDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
       propertyPath: keyTypes.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
       propertyPath: keyTypes.Array.data[0]
+      value: Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
+      propertyPath: doorColorThatLoadsNextLevel
       value: Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272721, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}

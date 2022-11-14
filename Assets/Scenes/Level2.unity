@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c7a9defdcaa4c7a4287bbd380899c204, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6402143295756069926, guid: 909ed7baa87b0c04ba280b9d40e1be0a, type: 3}
+      propertyPath: m_TagString
+      value: LevelManager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 909ed7baa87b0c04ba280b9d40e1be0a, type: 3}
 --- !u!1001 &386356413
@@ -373,6 +377,10 @@ PrefabInstance:
     - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_Name
       value: Bouncer3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8314509023713248700, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_RootOrder
@@ -555,6 +563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn2
       objectReference: {fileID: 0}
+    - target: {fileID: 5057719397668613923, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
 --- !u!4 &534723533 stripped
@@ -647,7 +659,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &574112641
 BoxCollider:
@@ -966,7 +978,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &714189344
 Transform:
@@ -1063,7 +1075,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &756393961
 BoxCollider:
@@ -1160,7 +1172,7 @@ GameObject:
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!136 &957508699
 CapsuleCollider:
@@ -1258,7 +1270,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1024750520
 Transform:
@@ -1355,7 +1367,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!65 &1076039755
 BoxCollider:
@@ -1452,7 +1464,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1150780495
 BoxCollider:
@@ -1546,7 +1558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1320976376
 Transform:
@@ -1588,7 +1600,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1364996432
 Transform:
@@ -1624,7 +1636,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1366587146
 Transform:
@@ -1823,7 +1835,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1689486501
 BoxCollider:
@@ -1966,7 +1978,7 @@ GameObject:
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!136 &1803354418
 CapsuleCollider:
@@ -2071,6 +2083,10 @@ PrefabInstance:
     - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_Name
       value: Bouncer2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8314509023713248700, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_RootOrder
@@ -2252,6 +2268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn1
       objectReference: {fileID: 0}
+    - target: {fileID: 5057719397668613923, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139ed91b13935d84b9a7844c2ab0cb9f, type: 3}
 --- !u!1001 &8314509023815381504
@@ -2264,6 +2284,10 @@ PrefabInstance:
     - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_Name
       value: Bouncer1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314509023713248696, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8314509023713248700, guid: 8e8a2e0c4e9711144928281aa94e5e73, type: 3}
       propertyPath: m_RootOrder
@@ -2323,6 +2347,10 @@ PrefabInstance:
       value: PlayerWin
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
+      propertyPath: levelLoadingDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
       propertyPath: keyTypes.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2332,6 +2360,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
       propertyPath: keyTypes.Array.data[1]
+      value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825752148397272717, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}
+      propertyPath: doorColorThatLoadsNextLevel
       value: Orange
       objectReference: {fileID: 0}
     - target: {fileID: 8825752148397272721, guid: 9cbf87f8c546d31458604bd110c4b78d, type: 3}

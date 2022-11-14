@@ -13,7 +13,7 @@ public class LevelHandler : MonoBehaviour
     private IEnumerator LoadSceneDelay(string sceneName, float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 
     }
 }
